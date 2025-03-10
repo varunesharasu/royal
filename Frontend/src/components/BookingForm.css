@@ -1,0 +1,114 @@
+/* Booking Form Styling */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.booking-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.booking-card:hover {
+    transform: scale(1.02);
+}
+
+/* Input Fields */
+.booking-inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.booking-inputs label {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.booking-inputs input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.booking-inputs input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Buttons */
+.calculate-btn, .pay-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.calculate-btn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+}
+
+.calculate-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.pay-btn {
+    background-color: #28a745;
+    color: white;
+    margin-top: 10px;
+}
+
+.pay-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.pay-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Total Amount */
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .booking-card {
+        width: 90%;
+    }
+}

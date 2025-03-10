@@ -1,0 +1,57 @@
+/* Home Page Styling */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://r1imghtlak.mmtcdn.com/1281c246dff811eda0030a58a9feac02.jpg") no-repeat center center/cover;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-card:hover {
+    transform: scale(1.02);
+}
+
+.explore-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.explore-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .home-card {
+        width: 90%;
+    }
+}

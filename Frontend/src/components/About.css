@@ -1,0 +1,105 @@
+/* Apply background image to the entire About page */
+
+
+/* About Page Container */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+
+}
+.about-container :hover
+{
+     background-color:#e1e1e1;
+}
+.about-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resort Logo */
+.resort-logo {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    color: #2c5036;
+    margin-top: 10px;
+}
+
+.about-content h2 {
+    font-size: 22px;
+    color: #1e824c;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0;
+}
+
+/* Amenities Styling */
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.amenities span {
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #1e824c;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
